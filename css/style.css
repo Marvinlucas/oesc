@@ -1,0 +1,798 @@
+body{
+    -webkit-print-color-adjust:exact !important;
+    print-color-adjust:exact !important;
+  }
+
+.exam-container{
+    background-color: #cfeffc;
+    padding: 3%;
+}
+
+.tab_body{
+    background-color: white;
+    padding: 2%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+.nav-pills .nav-link.active{
+    color: #fff;
+    background-color: #ed829c;
+}
+
+.nav-pills .nav-link {
+    border-radius: 0.35rem;
+    background-color: #f2b5c4;
+    color: #b1888f;
+    pointer-events: none;
+}
+
+.nav-item{
+    margin: 0 10px 0 0;
+}
+@media print {
+    .no-print, .no-print * {
+    display: none !important;
+    }
+    }
+@media (min-width: 1400px){
+    .card.mb-4.questionaire {
+        border: none;
+        
+        
+    }
+}
+@media (min-width: 768px){
+.col-md-5 {
+    flex: none;
+    max-width: none;
+}
+}
+@media print{
+	.navbar-nav {
+		display: none !important; 
+	}
+	button#back{
+        display: none !important; 
+    }
+    .result_container, .q_form {
+        columns: 3;
+        column-fill: balance;
+        min-height: 5000px;
+    }
+}
+ /* Hides the message element when the screen width is greater than or equal to 600px */
+ @media screen and (min-width: 600px) {
+    .message {
+      display: none;
+    }
+  }
+  /* Shows the message element when the screen width is less than 600px */
+  @media screen and (max-width: 768px) {
+    .row.justify-content-center {
+        display: none;
+    }
+    div#content{
+        display: none;
+    }
+    .message {
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+        color: white;
+        background-color: red;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+      
+  }
+
+.tab_body input[type=text], .examiner-form input[type=text], .examiner-form input[type=number], .examiner-form input[type=password]{
+  outline: 0;
+  border-bottom: 1px solid #6e707e;
+  border-radius: 0;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 50px;
+}
+
+
+  
+input#exam_title {
+    width: 100%;
+}
+input#course {
+    width: 100%;
+}
+    
+  
+#link_text{
+    background-color: #e1e1e1;
+    border: 1px solid #979797;
+    width: 85%;
+    margin: 15px 10px;
+}   
+
+.tab_body select, .tab_body input[type=datetime-local]{
+    border-radius:0;
+    border: 1px solid black;
+    margin-bottom:10px;
+}
+
+.hide{
+    display:none;
+}
+
+.options{
+    width: 100%;
+}
+
+.option{
+    display: flex;
+    margin:5px 0 ;
+}
+
+
+.bg-pink{
+    background-color: #f2b5c4;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+nav{
+    border-bottom: 2px solid #707070;
+}
+.logo{
+    object-fit: fill;
+    height: 65px;
+    width: 170px;
+}
+@media (max-width: 768px){
+    img.logo {
+        display: none;
+    }
+}
+@media (min-width: 768px){
+.col-md-10 {
+    flex: none;
+    max-width: none;
+}
+}
+
+@media (min-width: 768px){
+    .sidebar-brand-text.mx-3 {
+        display: none;
+    }
+    .col-md-10.exam-container{
+        flex: none;
+        max-width: none;
+}
+}
+@media (max-width: 768px){
+.col-xl-4.col-md-6.mb-4 {
+    margin-bottom: 8.5rem!important;
+}
+
+}
+@media (max-width: 480px){
+    .col-xl-4.col-md-6.mb-4 {
+        margin-bottom: 4.5rem!important;
+    }
+    }
+   
+.sidebar-brand-text.mx-3{
+    vertical-align: middle;
+    top: 30px;
+    position: absolute;
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+   
+}
+
+.card-img{
+    height: 220px;
+    width: 200px;
+    margin-top: -25%;
+    display: block;
+}
+
+.container-fluid{
+    /*padding-top: 100px;*/
+}
+.card-body.no-shadow {
+    box-shadow: none;
+}
+.container-fluid.this-page-only{
+    padding-top: 100px;
+}
+.card-btn{
+
+    color:#b999b5;
+    float: right;
+
+    align-self: center;
+    background-color: #fff;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  .card-body.special-card-body {
+    border-radius: inherit;
+}
+  .card-btn:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+  }
+  a:hover {
+    color: #a865a0;
+    text-decoration: none;
+}
+  .card-btn:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+  }
+
+
+.pink-gradient{
+    background: rgb(242,181,196);
+    background: linear-gradient(90deg, rgba(242,181,196,1) 0%, rgba(242,181,196,1) 54%, rgba(247,234,180,1) 97%);
+}
+
+.blue-gradient{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(170,220,253,1) 54%, rgba(170,220,253,1) 100%);
+}
+
+.border-round{
+    border-radius:25px;
+}
+.title{
+    color: black;
+}
+
+.btn-next{
+    background-color: #e8849e;
+    color: white;
+    border-radius:5px;
+    margin: 15px 10px;
+}
+.btn-prev{
+    background-color: white;
+    color: #979797;
+    border-radius:5px;
+    margin: 15px 10px;
+    border:1px solid #979797;
+}
+
+.card-header{
+    background-color:#f2b5c4;
+}
+
+.tab_head h6{
+    display: inline;
+}
+
+.questions{
+    width: 100%;
+}
+
+.questions td, .questions th{
+    padding:12px;
+}
+
+#pills-create input[type=text]{
+  /*  margin: 10px 15px;*/
+}
+input#q_title {
+    width: 100%;
+}
+input#fullname {
+    width: 100%;
+}
+input#username {
+    width: 100%;
+}
+input#password {
+    width: 100%;
+}
+.q_list{
+    margin-bottom: 0;
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+
+.opt_list, .ans{
+    margin-bottom: 0px;
+    text-indent: 25px;
+}
+
+.ans{
+    font-weight: 600;
+}
+
+.answer p{
+    display: inline;
+}
+
+#answer-text{
+    display: inline;
+    width: auto;
+    border: none;
+    color: #979797;
+}
+
+.examiner-form{
+    background-color: white;
+    padding: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.card-body{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 25px;
+}
+.examiner-form-container{
+    background-color: #cfeffc;
+    padding:5%;
+}
+
+.btn-pink{
+    background-color:#e8849e;
+    color:white;
+}
+
+.btn-fat{
+    padding:14px 20px;
+}
+
+.modal-footer button, .modal-footer input{
+    margin: 0;
+}
+
+body.exam #content{
+    background-color: white;
+}
+
+body.exam .container-fluid{
+    background-color: white;
+    padding-top: 100px;
+}
+
+body.exam nav{
+    border-bottom:0;
+    margin-bottom: 0;
+
+}
+
+body.exam h1{
+    color: rgb(33, 33, 33);
+    font-size: 60px;
+}
+
+
+
+body.exam input[type=text]{
+    outline: 0;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    background-color: white;
+}
+
+.examinee_body{
+    border-radius: 25px;
+    padding: 30px;
+    border:2px solid #ffffff;
+}
+
+.caution{
+    height: 100px;
+}
+#startModal .modal-footer{
+    display: block;
+}
+p#display {
+   
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+    line-height: 2;
+    max-height: 200px;
+}
+
+textarea#desc {
+    height: 150px;
+    columns: 80;
+}
+h5#descr {
+    position: absolute;
+    left: auto;
+    line-height: 4;
+}
+.scrollbar {
+    overflow-y: scroll;
+    margin-bottom: 25px;
+    color: #ffbde7 #ffffff;
+}
+#style-3::-webkit-scrollbar {
+    width: 1px;
+    background-color: #F5F5F5;
+}
+#style-3::-webkit-scrollbar-thumb {
+    background-color: #ffbde7;
+    border-radius: 10px;
+    border: 3px solid #e9bfca;
+}
+#style-3::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+.questionaire{
+   
+    padding:10px 20px;
+    margin: 40px 0;
+}
+.card.mb-4.questionaire {
+    border: none;
+    box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -3px 0px inset;
+}
+.q_option{
+    text-indent: 20px;
+    margin-bottom: 5px;
+}
+
+body.take_exam #content{
+    background-color: white;
+}
+
+body.take_exam .container-fluid{
+    background-color: white;
+}
+
+#cautionModal .modal-footer{
+    display: block;
+}
+
+#cautionModal .modal-footer button{
+    margin:0 10px;
+}
+
+body.take_exam nav{
+    background-color:#f2b5c4 ;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.form-group.mb-5{
+    border:1px solid #979797;
+    padding: 10px;
+}
+#timer{
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+    font-size: 24px;
+    position: fixed;
+}
+
+.submitted-img{
+    height: 100px;
+    margin: 10px;
+}
+
+.intro{
+    line-height: 4;
+}
+
+.chart{
+    padding: 70px 20px 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.chart_container{
+    position: relative;
+    margin: 20px 0px;
+}
+
+.chart_header{
+    position: absolute;
+    top: 0;
+    color: #b999b5;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px 30px;
+    text-align: left;
+}
+
+.chart_header p{
+    margin-bottom: 0;
+}
+
+
+.card-body .dropright .dropdown-toggle::after{
+    display: none;
+}
+
+#copy{
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 0;
+}
+
+.card_link{
+    color: black;
+    font-size: 18px;
+}
+
+.dropdown_body{
+    padding: 10px;
+    border: none;
+}
+
+hr{
+    margin: 5px 0;
+}
+
+.exam_card{
+    padding: 25px 0 5px;
+}
+
+.custom_modal{
+    border-radius:40px;
+    color: black;
+    font-weight: 700;
+}
+
+.v_center{
+    margin-top:10%;
+}
+
+#questions_options{
+    display:flex;
+}
+
+.optwrapper{
+    vertical-align: top;
+    display: block;
+    width: fit-content;
+    margin-bottom: 12px;
+}
+
+
+.optwrapper input[type="radio"] {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid #909d9f;
+    background-color: white;
+    -webkit-appearance: none; /*to disable the default appearance of radio button*/
+    -moz-appearance: none;
+
+
+}
+
+.optwrapper input[type="radio"]:focus { /*no need, if you don't disable default appearance*/
+    outline: none; /*to remove the square border on focus*/
+}
+
+.optwrapper input[type="radio"]:checked { /*no need, if you don't disable default appearance*/
+    background-color: #909d9f;
+}
+
+.optwrapper input[type="radio"]:checked ~ span:first-of-type {
+    color: white;
+}
+
+.optwrapper label span:first-of-type {
+    position: relative;
+    left: -12px;
+    font-size: 15px;
+    color: #909d9f;
+}
+
+.optwrapper label{
+    display: inline;
+    margin-right:25px;
+}
+
+.optwrapper label span {
+    position: relative;
+    top: 8px;
+}
+.card.mb-4.questionaire.no-shadow {
+    box-shadow: none;
+}
+/**CREATE EXAM**/
+
+.optwrapper1{
+    vertical-align: top;
+    display: block;
+    width: fit-content;
+    margin-bottom: 12px;
+}
+
+
+.optwrapper1 input[type="radio"] {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    border: 2px solid #909d9f;
+    background-color: white;
+    -webkit-appearance: none; /*to disable the default appearance of radio button*/
+    -moz-appearance: none;
+    margin-right: 0;
+}
+
+.optwrapper1 input[type="radio"]:focus { /*no need, if you don't disable default appearance*/
+    outline: none; /*to remove the square border on focus*/
+}
+
+.optwrapper input[type="radio"]:checked { /*no need, if you don't disable default appearance*/
+    background-color: pink;
+}
+.optwrapper1 input[type="radio"]:checked {
+ 
+    background-color: pink;
+}
+.optwrapper1 input[type="radio"]:checked ~ span:first-of-type {
+    color: white;
+}
+
+.optwrapper1 label span:first-of-type {
+    position: relative;
+    left: -20px;
+    font-size: 15px;
+    color: #909d9f;
+}
+
+.optwrapper1 label{
+    display: inline;
+}
+
+.optwrapper1 label span {
+    position: relative;
+    top: -10px;
+}
+
+.answerwrapper{
+    display:inline;
+}
+
+.btnwrapper{
+    float: right;
+}
+
+.no{
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.ans_sheet{
+    padding: 20px 40px;
+    padding: 20px 40px;
+    overflow-y: scroll;
+    max-height: 600px;
+}
+.watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+  }
+  @media print {
+    div#content{      
+        background-color: rgb(255, 255, 255);
+
+    }
+    .col-md-8{
+        border: 1px solid #e3e6f0; /* set the border width, style, and color */
+        border-radius: 2px; /* set the border radius */
+    }
+    footer.sticky-footer.bg-white{
+        display: none !important; 
+    }
+    }
+.underline{
+    border:none;
+   
+    background-color: transparent;
+}
+.header {
+    display: flex;
+}
+.title-container {
+    width: 300px;
+    height: 30px;
+    overflow: hidden;
+}
+
+
+.name{
+    margin: 20px 0;
+    
+}
+
+.opt_list{
+    margin: 30px 0;
+}
+
+.result_container, .q_form{
+    columns:2;
+    column-fill: balance;
+    min-height: 300px;
+}
+
+.form-check.form-check-inline {
+    DISPLAY: BLOCK;
+}
+div#opt_answers {
+    overflow-y: scroll;
+    max-height: 500px;
+}
+.black{
+    background-color: black;
+}
+
+.traq_table{
+    width: 100%;
+}
+.traq_table td, .traq_table th{
+    padding: 5px 10px;
+    text-align: center;
+}
+
+table .numbered{
+    counter-reset: row-num;
+}
+
+.numbered tr{
+    counter-increment: row-num;
+}
+
+.numbered tr td:first-child::before{
+    content: counter(row-num) ". ";
+}
+
+.numbering{
+    padding-right: 35px;
+}
